@@ -1,0 +1,11 @@
+/.history
+/logs
+/node_modules
+/dev
+/dist
+/distMin
+
+
+.env
+package-lock.json
+

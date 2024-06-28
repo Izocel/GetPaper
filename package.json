@@ -1,0 +1,27 @@
+{
+  "keywords": [],
+  "main": "index.ts",
+  "name": "GetPaper",
+  "version": "1.0.0",
+  "author": "RVÐ",
+  "license": "ISC",
+  "assets": "./assets",
+  "scripts": {
+    "watch": "npm run build && tsc -w",
+    "clean": "rm -rf dist node_modules package-lock.json",
+    "build": "rm -rf dist && npm i && tsc",
+    "start": "npm run clean && npm run build && npm run nodeSource",
+    "nodeDist": "node ./dist/src/index.js",
+    "nodeSource": "ts-node ./src/index.ts",
+    "clear-branches": "git branch | xargs git branch -D"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
